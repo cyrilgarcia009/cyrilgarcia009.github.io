@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUICIDE PACE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: #050505;
       color: #f2f2f2;
       line-height: 1.5;
@@ -49,11 +50,12 @@
     }
 
     .hero {
-      min-height: 72vh;
+      min-height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+      padding: 40px 0;
     }
 
     .hero-inner {
@@ -61,9 +63,9 @@
     }
 
     h1 {
-      font-size: clamp(2.4rem, 7vw, 5rem);
-      letter-spacing: 0.08em;
-      margin: 0 0 16px;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      letter-spacing: 0.12em;
+      margin-bottom: 20px;
     }
 
     .sub {
@@ -101,8 +103,8 @@
     }
 
     section {
-      padding: 80px 0;
-      border-top: 1px solid #171717;
+      padding: 100px 0;
+      border-top: 1px solid #1a1a1a;
     }
 
     h2 {
@@ -127,17 +129,18 @@
     
     .signup-button {
       display: inline-block;
-      padding: 14px 22px;
+      padding: 16px 26px;
       background: #f2f2f2;
       color: #050505;
       text-decoration: none;
       font-weight: 600;
+      letter-spacing: 0.05em;
       border: 1px solid #f2f2f2;
-      transition: 0.2s;
+      transition: all 0.2s ease;
     }
     
     .signup-button:hover {
-      background: #050505;
+      background: transparent;
       color: #f2f2f2;
     }
   </style>

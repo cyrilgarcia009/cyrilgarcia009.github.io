@@ -150,6 +150,11 @@
     .hero-inner {
       width: 100%;
       max-width: 1100px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 56px;
+      align-items: center;
+      padding: 80px 0;
     }
 
     .eyebrow {
@@ -244,7 +249,7 @@
 
     .countdown {
       display: grid;
-      grid-template-columns: repeat(4, minmax(64px, 90px));
+      grid-template-columns: repeat(4, 88px);
       gap: 12px;
     }
 
@@ -273,10 +278,10 @@
     }
 
     .hero-art {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .logo-frame {
       width: min(460px, 100%);
@@ -320,9 +325,10 @@
     }
 
     .hero-logo {
-  width: min(420px, 80%);
-  filter: drop-shadow(0 20px 50px rgba(0,0,0,0.8));
-}
+      width: min(520px, 100%);
+      max-width: 520px;
+      filter: drop-shadow(0 20px 50px rgba(0,0,0,0.8));
+    }
 
     section {
       padding: 110px 0;
@@ -406,11 +412,7 @@
       flex-wrap: wrap;
     }
 
-    @media (max-width: 700px) {
-      hero-inner {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-      },
+    @media (max-width: 900px) {
       .about-grid {
         grid-template-columns: 1fr;
       }
@@ -430,10 +432,6 @@
 
       .logo-frame {
         width: min(360px, 88vw);
-      }
-
-      .countdown {
-        grid-template-columns: repeat(2, minmax(72px, 1fr));
       }
 
       .mini-stats {
@@ -467,10 +465,6 @@
       },
       .secondary-button {
         width: 100%;
-      }
-
-      .countdown {
-        grid-template-columns: repeat(2, 1fr);
       }
 
       .countdown-item {

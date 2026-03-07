@@ -94,10 +94,18 @@
     }
 
     .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-size: 0.78rem;
       font-weight: 800;
       letter-spacing: 0.28em;
       text-transform: uppercase;
+    }
+    
+    .brand-logo {
+      height: 40px;
+      opacity: 0.85;
     }
 
     .nav-links {
@@ -474,7 +482,10 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="#" class="brand">SUICIDE PACE</a>
+      <a href="#" class="brand">
+        <img src="skull_logo.png" class="brand-logo">
+        SUICIDE PACE
+      </a>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSefzTerFrAMJvmMryEXYo1fxKBFkpnw-E4yNXTIyKPqUg8QEQ/viewform" target="_blank" rel="noopener">Sign Up</a>

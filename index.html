@@ -42,7 +42,6 @@
       position: relative;
     }
 
-    /* Grain overlay */
     body::before {
       content: "";
       position: fixed;
@@ -102,9 +101,10 @@
       letter-spacing: 0.28em;
       text-transform: uppercase;
     }
-    
+
     .brand-logo {
       height: 40px;
+      width: auto;
       opacity: 0.85;
     }
 
@@ -132,7 +132,6 @@
       overflow: hidden;
     }
 
-    /* Subtle background glow */
     .hero::before {
       content: "";
       position: absolute;
@@ -165,7 +164,6 @@
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-    
       font-family: "Bebas Neue", sans-serif;
     }
 
@@ -202,11 +200,12 @@
       min-height: 52px;
       padding: 0 22px;
       border: 1px solid var(--line);
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       transition: all 0.2s ease;
+      font-family: "Bebas Neue", sans-serif;
     }
 
     .signup-button {
@@ -245,6 +244,7 @@
       font-weight: 700;
       letter-spacing: 0.18em;
       text-transform: uppercase;
+      font-family: "Bebas Neue", sans-serif;
     }
 
     .countdown {
@@ -273,7 +273,6 @@
       font-size: 0.7rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-    
       font-family: "Bebas Neue", sans-serif;
     }
 
@@ -281,47 +280,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .logo-frame {
-      width: min(460px, 100%);
-      aspect-ratio: 1 / 1;
-      border: 1px solid rgba(255,255,255,0.08);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)),
-        rgba(255,255,255,0.02);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px;
-      position: relative;
-      overflow: hidden;
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.02) inset,
-        0 20px 80px rgba(0,0,0,0.45);
-    }
-
-    .logo-frame::before,
-    .logo-frame::after {
-      content: "";
-      position: absolute;
-      inset: auto;
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 30%, rgba(255,255,255,0) 70%);
-      filter: blur(12px);
-      pointer-events: none;
-    }
-
-    .logo-frame::before {
-      top: -30px;
-      left: -30px;
-    }
-
-    .logo-frame::after {
-      right: -30px;
-      bottom: -30px;
     }
 
     .hero-logo {
@@ -388,6 +346,7 @@
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
+      font-family: "Bebas Neue", sans-serif;
     }
 
     .mini-card span {
@@ -416,7 +375,6 @@
       .about-grid {
         grid-template-columns: 1fr;
       }
-    }
 
       .hero {
         min-height: auto;
@@ -424,10 +382,6 @@
 
       .hero-inner {
         padding: 72px 0 48px;
-      }
-
-      .hero-art {
-        order: -1;
       }
 
       .logo-frame {
@@ -457,12 +411,7 @@
         align-items: stretch;
       }
 
-      .signup-button {
-        font-family: "Bebas Neue", sans-serif;
-        letter-spacing: 0.12em;
-        font-size: 1rem;
-        font-family: "Bebas Neue", sans-serif;
-      },
+      .signup-button,
       .secondary-button {
         width: 100%;
       }
@@ -481,7 +430,7 @@
   <header>
     <div class="container nav">
       <a href="#" class="brand">
-        <img src="skull_only.png" class="brand-logo">
+        <img src="skull_only.png" alt="S Pace skull logo" class="brand-logo">
         S PACE
       </a>
       <nav class="nav-links">
@@ -503,7 +452,7 @@
           </p>
 
           <div class="cta-row">
-            <a class="signup-button" href="YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener">
+            <a class="signup-button" href="https://docs.google.com/forms/d/e/1FAIpQLSefzTerFrAMJvmMryEXYo1fxKBFkpnw-E4yNXTIyKPqUg8QEQ/viewform" target="_blank" rel="noopener">
               Sign up for future drops
             </a>
             <a class="secondary-button" href="#about">
@@ -535,8 +484,7 @@
         </div>
 
         <div class="hero-art">
-          <img src="long_logo.png" alt="Suicide Pace logo" class="hero-logo">
-          
+          <img src="long_logo.png" alt="S Pace logo" class="hero-logo">
         </div>
       </div>
     </section>
@@ -581,7 +529,6 @@
   </footer>
 
   <script>
-    // Set your launch date here:
     const launchDate = new Date("2026-04-01T10:00:00").getTime();
 
     const daysEl = document.getElementById("days");
